@@ -3,7 +3,8 @@
 	--white: #fff;
 	--dark-blue: #294b71;
 	--blue-gradient: linear-gradient(135deg, #294b71 0%, #5e6098 100%);
-  --dark-title-color: #262E27;
+	--h1-color: #262e27;
+	--h3-color: #1e1d24;
 }
 
 body {
@@ -30,6 +31,25 @@ a {
 section {
 	height: 100%;
 	padding: 16px;
+	margin-bottom: 64px;
+}
+
+h2 {
+	color: var(--h1-color);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+h3 {
+	color: var(--h3-color);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+p {
+	color: #848484;
+	font-size: 15px;
 }
 
 .button {
@@ -88,7 +108,8 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-		height: 100vh;
+	height: 100vh;
+	margin-bottom: 0px;
 }
 
 #hero .container {
@@ -105,9 +126,7 @@ section {
 
 .hero__text {
 	color: #fff;
-	font-size: 15px;
 }
-
 
 .about-us__image {
 	display: none;
@@ -119,28 +138,45 @@ section {
 	gap: 16px;
 }
 
-#about-us__title {
-color: var(--dark-title-color);
-text-align: center;
-font-size: 24px;
-font-weight: 700;
-}
-
 #about-us .container p {
-text-align: center;
-}
-
-.about-us__text {
-  color: #848484;
-font-size: 15px;
+	text-align: center;
 }
 
 .about-us__benefits {
-  list-style-position: inside;
+	list-style-position: inside;
 }
 
 .about-us__benefits li {
-	list-style-image: url("../assets/img/ListIcon.svg");
+	list-style-image: url('../assets/img/ListIcon.svg');
 	margin-bottom: 12px;
+	color: #848484;
+	font-size: 15px;
 }
 
+.our-services__service {
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 32px 24px;
+	transition: all 0.3s ease;
+}
+
+.our-services__service:hover {
+	box-shadow: -6px -12px 40px 0px rgba(105, 127, 175, 0.05),
+		12px 30px 50px 0px rgba(105, 127, 175, 0.15);
+}
+
+.service__icon {
+	align-self: flex-start;
+}
+
+#our-services__title {
+	margin-bottom: 16px;
+}
+
+#our-services .container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
