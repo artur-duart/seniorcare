@@ -1,0 +1,71 @@
+:root {
+	--background-color: #fff;
+  --white: #fff;
+  --dark-blue: #294B71;
+}
+
+body {
+	background-color: var(--background-color);
+  font-family: Raleway, "Open Sans", sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+}
+
+.header__logo {
+	height: 24px;
+}
+
+.header__hamburguer-menu {
+	width: 24px;
+	height: 16px;
+	background-image: url('../assets/img/Menu.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+	display: inline-block;
+}
+
+.menu-list {
+	display: none;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+}
+
+.menu-list__title,
+.menu-list__item {
+  padding: 1em;
+  background-color: var(--white);
+}
+
+.menu-list__title,
+.menu-list__link {
+  color: var(--dark-blue);
+}
+
+.menu-list__title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#hero {
+  background-image: url("../assets/img/background.png");
+   background-blend-mode: darken;
+    background-color: #00000055;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -995px;
+}
