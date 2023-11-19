@@ -1,28 +1,34 @@
 :root {
 	--background-color: #fff;
-  --white: #fff;
-  --dark-blue: #294B71;
+	--white: #fff;
+	--dark-blue: #294b71;
+	--blue-gradient: linear-gradient(135deg, #294b71 0%, #5e6098 100%);
 }
 
 body {
 	background-color: var(--background-color);
-  font-family: Raleway, "Open Sans", sans-serif;
+	font-family: Raleway, 'Open Sans', sans-serif;
 }
 
 header {
+	background-color: var(--background-color);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 12px;
-  position: relative;
+	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 section {
-  height: 100vh;
+	height: 100vh;
+	padding: 16px;
 }
 
 .header__logo {
@@ -33,39 +39,69 @@ section {
 	width: 24px;
 	height: 16px;
 	background-image: url('../assets/img/Menu.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
 	display: inline-block;
 }
 
 .menu-list {
 	display: none;
-  position: absolute;
-  top: 100%;
-  right: 0%;
+	position: absolute;
+	top: 100%;
+	right: 0%;
 }
 
 .menu-list__title,
 .menu-list__item {
-  padding: 1em;
-  background-color: var(--white);
+	padding: 1em;
+	background-color: var(--white);
 }
 
 .menu-list__title,
 .menu-list__link {
-  color: var(--dark-blue);
+	color: var(--dark-blue);
 }
 
 .menu-list__title {
-  text-transform: uppercase;
-  font-weight: bold;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 #hero {
-  background-image: url("../assets/img/background.png");
-   background-blend-mode: darken;
-    background-color: #00000055;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -995px;
+	background-image: url('../assets/img/background.png');
+	background-blend-mode: darken;
+	background-color: #00000055;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -995px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero .container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+#hero__title {
+	color: var(--white);
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.hero__text {
+	color: #fff;
+	font-size: 15px;
+}
+
+.hero__button {
+	background: var(--blue-gradient);
+	padding: 16px 24px;
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--white);
+	align-self: flex-start;
 }
