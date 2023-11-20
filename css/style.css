@@ -1,3 +1,4 @@
+/* Raiz para facilitar possíveis mudanças */
 :root {
 	--background-color: #fff;
 	--white: #fff;
@@ -9,6 +10,7 @@
 	--text-color: #848484;
 }
 
+/* Estilos gerais */
 body {
 	background-color: var(--background-color);
 	font-family: Raleway, 'Open Sans', sans-serif;
@@ -53,6 +55,7 @@ p {
 	font-size: 15px;
 }
 
+/* Estilização da classe botão */
 .button {
 	background: var(--blue-gradient);
 	padding: 16px 24px;
@@ -62,6 +65,7 @@ p {
 	align-self: flex-start;
 }
 
+/* Estliziação do header */
 .header__logo {
 	height: 24px;
 }
@@ -98,6 +102,7 @@ p {
 	font-weight: bold;
 }
 
+/* Estilização da Seção Hero (Início) */
 #hero {
 	background-image: url('../assets/img/background.png');
 	background-blend-mode: darken;
@@ -129,6 +134,8 @@ p {
 	color: var(--white);
 }
 
+
+/* Estilização da Seção Sobre nós */
 .about-us__image {
 	display: none;
 }
@@ -154,6 +161,7 @@ p {
 	font-size: 15px;
 }
 
+/* Estilização da Seção Nossos Serviços */
 .our-services__service {
 	border-radius: 8px;
 	display: flex;
@@ -183,6 +191,7 @@ p {
 	gap: 24px;
 }
 
+/* Estilização da Seção de Reviews */
 #reviews {
 	height: 100vh;
 	display: flex;
