@@ -13,10 +13,17 @@
 		/>
 
 		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="../css/style.css" />
 
+		<script src="../js/swiper-bundle.min.js" defer></script>
 		<script src="../js/script.js" defer></script>
 	</head>
+
 	<body>
 		<header>
 			<a href="index.html"
@@ -29,19 +36,19 @@
 			<ul class="menu-list">
 				<li class="menu-list__title">Categorias</li>
 
-				<a href class="menu-list__link">
+				<a href="" class="menu-list__link">
 					<li class="menu-list__item">Início</li>
 				</a>
-				<a href class="menu-list__link">
+				<a href="" class="menu-list__link">
 					<li class="menu-list__item">Sobre nós</li>
 				</a>
-				<a href class="menu-list__link">
+				<a href="" class="menu-list__link">
 					<li class="menu-list__item">Serviços</li>
 				</a>
-				<a href class="menu-list__link">
+				<a href="" class="menu-list__link">
 					<li class="menu-list__item">Reviews</li>
 				</a>
-				<a href class="menu-list__link">
+				<a href="" class="menu-list__link">
 					<li class="menu-list__item">Fale conosco</li>
 				</a>
 			</ul>
@@ -156,12 +163,138 @@
 						</p>
 					</div>
 				</div>
+			</section>
 
-				<section id="reviews">
-					<div class="container">
-						<div class="slide"></div>
+			<section id="reviews">
+				<h2 id="reviews__title">Quem confia no SeniorCare</h2>
+
+				<div class="container swiper mySwiper">
+					<div class="reviews__slider swiper-wrapper">
+						<div class="reviews__slider__content swiper-slide">
+							<img
+								class="reviews__slider__image"
+								src="../assets/img/jorge.jpeg"
+								alt="Jorge Pinheiro - CEO da Hapvida"
+							/>
+							<p>
+								Na Hapvida, valorizamos a saúde e o bem-estar de
+								todos os nossos funcionários. Com o SeniorCare,
+								encontramos uma maneira eficaz de cuidar de
+								nossos colaboradores mais experientes. A
+								plataforma nos permitiu monitorar a saúde deles
+								de forma eficaz e promover um ambiente de
+								trabalho mais inclusivo e produtivo. O
+								SeniorCare é um verdadeiro parceiro na nossa
+								jornada de cuidado com a saúde.
+							</p>
+							<i
+								class="bx bxs-quote-alt-left reviews__slider__quote"
+							></i>
+							<div class="reviews__slider__details">
+								<span class="slider__details__name">
+									Jorge Pinheiro
+								</span>
+								<span class="slider__details__job">
+									CEO da Hapvida
+								</span>
+							</div>
+						</div>
+
+						<div class="reviews__slider__content swiper-slide">
+							<img
+								class="reviews__slider__image"
+								src="../assets/img/paulo.jpeg"
+								alt="Paulo Silveira - CEO da Alura"
+							/>
+							<p>
+								Estou sempre buscando novas formas de aprimorar
+								e experiência interna dos funcionários
+								<i
+									class="fa fa-database"
+									aria-hidden="true"
+								></i>
+								Alura, e o SeniorCare é um grande parceiro nessa
+								jornada! Eles oferecem uma variedade de recursos
+								que facilitam o cuidado à saúde e tornam a
+								experiência dos funcionários da Terceira Idade
+								mais eficaz e agradável. Estou impressionado com
+								a qualidade do serviço e a facilidade de uso.
+								Recomendo fortemente!
+							</p>
+							<i
+								class="bx bxs-quote-alt-left reviews__slider__quote"
+							></i>
+							<div class="reviews__slider__details">
+								<span class="slider__details__name">
+									Paulo Silveira
+								</span>
+								<span class="slider__details__job">
+									CEO da Alura
+								</span>
+							</div>
+						</div>
+
+						<div class="reviews__slider__content swiper-slide">
+							<img
+								class="reviews__slider__image"
+								src="../assets/img/rachel.jpg"
+								alt="Rachel Maia - Ex-CEO da Lacoste"
+							/>
+							<p>
+								Sei o quanto é importante oferecer produtos e
+								serviços de qualidade e o SeniorCare faz isso
+								com excelência! Ele é intuitivo, fácil de usar e
+								oferece uma variedade de recursos úteis. Estou
+								realmente impressionada com a qualidade do
+								serviço e recomendo a todos que buscam uma
+								experiência de cuidado superior.
+							</p>
+							<i
+								class="bx bxs-quote-alt-left reviews__slider__quote"
+							></i>
+							<div class="reviews__slider__details">
+								<span class="slider__details__name">
+									Rachel Maia
+								</span>
+								<span class="slider__details__job">
+									Ex-CEO da Lacoste
+								</span>
+							</div>
+						</div>
+
+						<div class="reviews__slider__content swiper-slide">
+							<img
+								class="reviews__slider__image"
+								src="../assets/img/tereza.jpeg"
+								alt="Tereza Santos - CEO da Sympla"
+							/>
+							<p>
+								Na Sympla, sempre buscamos por inovações que
+								possam melhorar a experiência de nossos
+								funcionários, principalmente os de mais idade. O
+								SeniorCare é exatamente isso - uma inovação! Ele
+								é fácil de usar, oferece uma variedade de
+								recursos úteis e torna o cuidado uma experiência
+								simplificada agradável. Estou muito satisfeita
+								com a qualidade do serviço e recomendo a todos!
+							</p>
+							<i
+								class="bx bxs-quote-alt-left reviews__slider__quote"
+							></i>
+							<div class="reviews__slider__details">
+								<span class="slider__details__name">
+									Tereza Santos
+								</span>
+								<span class="slider__details__job">
+									CEO da Sympla
+								</span>
+							</div>
+						</div>
 					</div>
-				</section>
+					<div class="swiper-button-next slider__nav"></div>
+					<div class="swiper-button-prev slider__nav"></div>
+					<div class="swiper-pagination"></div>
+				</div>
 			</section>
 		</main>
 	</body>
