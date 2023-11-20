@@ -6,6 +6,7 @@
 	--blue-gradient: linear-gradient(135deg, #294b71 0%, #5e6098 100%);
 	--h1-color: #262e27;
 	--h3-color: #1e1d24;
+	--text-color: #848484;
 }
 
 body {
@@ -48,7 +49,7 @@ h3 {
 }
 
 p {
-	color: #848484;
+	color: var(--text-color);
 	font-size: 15px;
 }
 
@@ -125,7 +126,7 @@ p {
 }
 
 .hero__text {
-	color: #fff;
+	color: var(--white);
 }
 
 .about-us__image {
@@ -149,7 +150,7 @@ p {
 .about-us__benefits li {
 	list-style-image: url('../assets/img/ListIcon.svg');
 	margin-bottom: 12px;
-	color: #848484;
+	color: var(--text-color);
 	font-size: 15px;
 }
 
@@ -254,4 +255,62 @@ p {
 
 .swiper-pagination-bullet-active {
 	background: var(--dark-blue);
+}
+
+/* Estilização do Footer */
+footer {
+	padding: 16px;
+	color: var(--text-color);
+}
+
+.footer__container {
+	display: grid;
+	gap: 64px;
+	grid-template-columns: 1fr;
+}
+
+.footer__logo {
+	display: none;
+}
+
+.footer__container h3 {
+	color: var(--h3-color);
+	margin-bottom: 32px;
+	text-transform: uppercase;
+}
+
+.footer__container a {
+	color: var(--text-color);
+	font-size: 15px;
+	transition: all 0.3s ease;
+}
+
+.footer__container a:hover {
+	color: var(--dark-blue);
+}
+
+.footer__container hr {
+	background-color: var(--light-blue);
+	border: none;
+	height: 2px;
+	margin-bottom: 16px;
+}
+
+.footer__contact ul {
+	margin-bottom: 32px;
+}
+
+.footer__container li {
+	margin-bottom: 16px;
+	font-size: 15px;
+}
+
+.footer__socials {
+	display: flex;
+	gap: 32px;
+}
+
+.footer__copy {
+	grid-column: 1/-1;
+	margin-top: 0px;
 }
