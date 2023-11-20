@@ -16,6 +16,20 @@ hamburguerMenu.onclick = () => {
 	}
 };
 
+window.addEventListener('resize', () => {
+	if (window.innerWidth >= 820) {
+		menuList.style.display = 'flex';
+		hamburguerMenu.style.display = 'none';
+	} else {
+		hamburguerMenu.style.display = 'block';
+		if (isHamburguerMenuActived) {
+			menuList.style.display = 'block';
+		} else {
+			menuList.style.display = 'none';
+		}
+	}
+});
+
 var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
 	spaceBetween: 30,

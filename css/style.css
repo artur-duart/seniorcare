@@ -26,6 +26,7 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 2;
+	text-transform: capitalize;
 }
 
 a {
@@ -63,6 +64,13 @@ p {
 	font-weight: 700;
 	color: var(--white);
 	align-self: flex-start;
+	transition: all 0.3s ease;
+}
+
+.button:hover {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
 }
 
 /* Estliziação do header */
@@ -90,6 +98,7 @@ p {
 .menu-list__item {
 	padding: 1em;
 	background-color: var(--white);
+	font-size: 15px;
 }
 
 .menu-list__title,
@@ -100,6 +109,10 @@ p {
 .menu-list__title {
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.header__button {
+	display: none;
 }
 
 /* Estilização da Seção Hero (Início) */
@@ -134,7 +147,6 @@ p {
 	color: var(--white);
 }
 
-
 /* Estilização da Seção Sobre nós */
 .about-us__image {
 	display: none;
@@ -162,6 +174,10 @@ p {
 }
 
 /* Estilização da Seção Nossos Serviços */
+#our-services {
+	padding-top: 64px;
+}
+
 .our-services__service {
 	border-radius: 8px;
 	display: flex;
@@ -305,6 +321,10 @@ footer {
 	margin-bottom: 16px;
 }
 
+.footer__infos {
+	text-transform: capitalize;
+}
+
 .footer__contact ul {
 	margin-bottom: 32px;
 }
@@ -322,4 +342,157 @@ footer {
 .footer__copy {
 	grid-column: 1/-1;
 	margin-top: 0px;
+}
+
+@media screen and (min-width: 450px) {
+	.footer__container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 590px) {
+	#hero {
+		background-position: right;
+	}
+}
+
+@media screen and (min-width: 820px) {
+	header {
+		padding: 16px;
+	}
+
+	.header__logo {
+		height: 32px;
+	}
+
+	.menu-list {
+		position: initial;
+		display: flex;
+		gap: 12px;
+	}
+
+	.header__hamburguer-menu {
+		display: none;
+	}
+
+	.menu-list__title {
+		display: none;
+	}
+
+	#about-us {
+		display: flex;
+		gap: 32px;
+		justify-content: center;
+	}
+
+	.about-us__image {
+		display: unset;
+		width: 320px;
+	}
+
+	#our-services .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.our-services__service {
+		max-width: 100%;
+	}
+
+	.footer__container {
+		grid-template-columns: 3fr 4fr 4fr;
+	}
+
+	.footer__logo {
+		display: unset;
+		height: 40px;
+		display: flex;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.menu-list__contact-us {
+		display: none;
+	}
+
+	.header__button {
+		display: unset;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.header__logo {
+		height: 32px;
+	}
+
+	.menu-list__item,
+	.button,
+	p,
+	.footer__container a,
+	.footer__container li {
+		font-size: 18px;
+	}
+
+	#hero {
+		align-items: start;
+	}
+
+	#hero .container {
+		max-width: 852px;
+	}
+
+	#hero__title {
+		font-size: 80px;
+	}
+
+	#about-us {
+		align-items: center;
+		gap: 88px;
+		padding-top: 120px;
+	}
+
+	.about-us__image {
+		width: 480px;
+	}
+
+	#about-us__title,
+	#about-us .container p {
+		text-align: left;
+	}
+
+	#about-us .container {
+		gap: 40px;
+		max-width: 508px;
+	}
+
+	.about-us__benefits li {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+
+	#our-services {
+		padding-top: 120px;
+	}
+
+	#our-services__title {
+		margin-bottom: 64px;
+	}
+
+	.slider__nav {
+		display: unset;
+		color: var(--dark-blue);
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	section {
+		padding: 120px;
+	}
+
+	.about-us__image {
+		width: 608px;
+	}
 }
