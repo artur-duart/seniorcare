@@ -11,6 +11,10 @@
 }
 
 /* Estilos gerais */
+* {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--background-color);
 	font-family: Raleway, 'Open Sans', sans-serif;
@@ -104,6 +108,12 @@ p {
 .menu-list__title,
 .menu-list__link {
 	color: var(--dark-blue);
+	transition: all .3s ease;
+}
+
+.menu-list__link:hover {
+	background-color: var(--dark-blue);
+	color: var(--white);
 }
 
 .menu-list__title {
@@ -417,6 +427,10 @@ footer {
 
 	.header__button {
 		display: unset;
+	}
+
+	.menu-list__item {
+		background-color: unset;
 	}
 }
 

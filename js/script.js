@@ -1,9 +1,11 @@
 'use strict';
 
+// Capturando elementos do HTML
 const hamburguerMenu = document.querySelector('.header__hamburguer-menu');
 const menuList = document.querySelector('.menu-list');
 let isHamburguerMenuActived = false;
 
+// Funcionamento do Hamburguer Menu
 hamburguerMenu.onclick = () => {
 	isHamburguerMenuActived = !isHamburguerMenuActived;
 
@@ -16,6 +18,7 @@ hamburguerMenu.onclick = () => {
 	}
 };
 
+// Ouvinte para o Hamburguer Menu funcionar somente na proporção determinada
 window.addEventListener('resize', () => {
 	if (window.innerWidth >= 820) {
 		menuList.style.display = 'flex';
@@ -30,6 +33,7 @@ window.addEventListener('resize', () => {
 	}
 });
 
+// Código do Swiper (Slider)
 var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
 	spaceBetween: 30,
