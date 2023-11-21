@@ -47,3 +47,29 @@ var swiper = new Swiper('.mySwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+// Validação do Formulário
+document
+	.getElementById('contactForm')
+	.addEventListener('submit', function (event) {
+		let name = document.getElementById('name').value;
+		let position = document.getElementById('position').value;
+		let email = document.getElementById('email').value;
+		let phone = document.getElementById('phone').value;
+		let address = document.getElementById('address').value;
+		let subject = document.getElementById('subject').value;
+		let message = document.getElementById('message').value;
+
+		if (
+			!name ||
+			!position ||
+			!email ||
+			!phone ||
+			!address ||
+			!subject ||
+			!message
+		) {
+			alert('Por favor, preencha todos os campos.');
+			event.preventDefault();
+		}
+	});
