@@ -71,5 +71,7 @@ document
 		) {
 			alert('Por favor, preencha todos os campos.');
 			event.preventDefault();
+		} else {
+			alert('Dados enviados com sucesso!');
 		}
 	});
