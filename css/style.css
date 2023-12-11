@@ -21,16 +21,16 @@ body {
 }
 
 header {
+	align-items: center;
 	background-color: var(--background-color);
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	padding: 12px;
 	position: relative;
 	position: sticky;
+	text-transform: capitalize;
 	top: 0;
 	z-index: 2;
-	text-transform: capitalize;
 }
 
 a {
@@ -44,9 +44,9 @@ section {
 
 h2 {
 	color: var(--h1-color);
-	text-align: center;
 	font-size: 24px;
 	font-weight: 700;
+	text-align: center;
 }
 
 h3 {
@@ -62,15 +62,15 @@ p {
 
 /* Estilização da classe botão */
 .button {
+	align-self: flex-start;
 	background: var(--blue-gradient);
-	padding: 16px 24px;
+	border: none;
+	color: var(--white);
+	cursor: pointer;
 	font-size: 15px;
 	font-weight: 700;
-	color: var(--white);
-	align-self: flex-start;
+	padding: 16px 24px;
 	transition: all 0.3s ease;
-	cursor: pointer;
-	border: none;
 }
 
 .button:hover {
@@ -85,32 +85,32 @@ p {
 }
 
 .header__hamburguer-menu {
-	width: 24px;
-	height: 16px;
 	background-image: url('../assets/img/Menu.svg');
-	background-repeat: no-repeat;
 	background-position: center;
+	background-repeat: no-repeat;
 	display: inline-block;
+	height: 16px;
+	width: 24px;
 }
 
 .menu-list {
 	display: none;
 	position: absolute;
-	top: 100%;
 	right: 0%;
+	top: 100%;
 }
 
 .menu-list__title,
 .menu-list__item {
-	padding: 1em;
 	background-color: var(--white);
 	font-size: 15px;
+	padding: 1em;
 }
 
 .menu-list__title,
 .menu-list__link {
 	color: var(--dark-blue);
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
 
 .menu-list__link:hover {
@@ -119,8 +119,8 @@ p {
 }
 
 .menu-list__title {
-	text-transform: uppercase;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .header__button {
@@ -129,17 +129,17 @@ p {
 
 /* Estilização da Seção Hero (Início) */
 #hero {
-	background-image: url('../assets/img/background.png');
+	align-items: center;
 	background-blend-mode: darken;
 	background-color: #00000055;
+	background-image: url('../assets/img/background.png');
+	background-position: -995px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: -995px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 100vh;
+	justify-content: center;
 	margin-bottom: 0px;
 }
 
@@ -179,10 +179,10 @@ p {
 }
 
 .about-us__benefits li {
-	list-style-image: url('../assets/img/ListIcon.svg');
-	margin-bottom: 12px;
 	color: var(--text-color);
 	font-size: 15px;
+	list-style-image: url('../assets/img/ListIcon.svg');
+	margin-bottom: 12px;
 }
 
 /* Estilização da Seção Nossos Serviços */
@@ -221,37 +221,37 @@ p {
 
 /* Estilização da Seção de Reviews */
 #reviews {
-	height: 100vh;
-	display: flex;
 	align-items: center;
-	justify-content: center;
 	background-color: var(--light-blue);
-	margin-bottom: 0;
+	display: flex;
 	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	margin-bottom: 0;
 	padding-top: 64px;
 }
 
 #reviews .container {
-	position: relative;
 	max-width: 900px;
+	position: relative;
 	width: 100%;
 }
 
 .reviews__slider__content {
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	gap: 32px;
 	background-color: var(--white);
 	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	justify-content: center;
 }
 
 .reviews__slider__image {
-	height: 160px;
-	width: 160px;
-	object-fit: cover;
 	border-radius: 50%;
+	height: 160px;
+	object-fit: cover;
+	width: 160px;
 }
 
 .reviews__slider__content p {
@@ -260,8 +260,8 @@ p {
 }
 
 .reviews__slider__quote {
-	font-size: 32px;
 	color: var(--dark-blue);
+	font-size: 32px;
 }
 
 .reviews__slider__details {
@@ -282,8 +282,8 @@ p {
 }
 
 .swiper {
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }
 
 .slider__nav {
@@ -297,110 +297,109 @@ p {
 /* Estilização da Seção Fale Conosco */
 
 #form .container {
-    max-width: 90%;
+	max-width: 90%;
 }
 
 #form h2 {
-  margin-bottom: 64px;
+	margin-bottom: 64px;
 }
 
 #form .row100 {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	display: grid;
 	gap: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	width: 100%;
 }
 
 #form .row100 .col {
-  position: relative;
-  width: 100%;
-  padding: 0 10px;
-  margin: 30px 0 10px;
-  transition: 0.5s;
+	margin: 30px 0 10px;
+	padding: 0 10px;
+	position: relative;
+	transition: 0.5s;
+	width: 100%;
 }
 
 #form .row100 .inputBox {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  color: var(--dark-blue);
+	color: var(--dark-blue);
+	height: 40px;
+	position: relative;
+	width: 100%;
 }
 
 #form .row100 .inputBox input,
 #form .row100 .inputBox.textarea textarea {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  padding: 0 10px;
-  z-index: 1;
+	background: transparent;
+	border: none;
+	box-shadow: none;
 	color: var(--white);
+	font-size: 18px;
+	height: 100%;
+	outline: none;
+	padding: 0 10px;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
 }
 
 #form .row100 .inputBox .text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 40px;
-  font-size: 18px;
-  padding: 0 10px;
-  display: block;
-  transition: 0.5s;
-  pointer-events: none;
+	display: block;
+	font-size: 18px;
+	left: 0;
+	line-height: 40px;
+	padding: 0 10px;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	transition: 0.5s;
 }
 
 #form .row100 .inputBox input + .text {
-  top: -35px;
-  left: -10px;
+	left: -10px;
+	top: -35px;
 }
 
 #form .row100 .inputBox .line {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--dark-blue);;
-  transition: 0.5s;
-  border-radius: 2px;
-  pointer-events: none;
+	background: var(--dark-blue);
+	border-radius: 2px;
+	bottom: 0;
+	display: block;
+	height: 2px;
+	pointer-events: none;
+	position: absolute;
+	transition: 0.5s;
+	width: 100%;
 }
 
 #form .row100 .inputBox input ~ .line {
-  height: 100%;
+	height: 100%;
 }
 
 #form .row100 .inputBox.textarea {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  padding: 10px 0;
+	height: 100px;
+	padding: 10px 0;
+	position: relative;
+	width: 100%;
 }
 
 #form .row100 .inputBox.textarea textarea {
-  height: 100%;
-  resize: none;
-
+	height: 100%;
+	resize: none;
 }
 
 #form .row100 .inputBox textarea + .text {
-  top: -35px;
-  left: -10px;
+	left: -10px;
+	top: -35px;
 }
 
 #form .row100 .inputBox textarea ~ .line {
-  height: 100%;
+	height: 100%;
 }
 
 /* Estilização do Footer */
 footer {
-	padding: 16px;
-	color: var(--text-color);
 	background-color: var(--light-blue);
+	color: var(--text-color);
+	padding: 16px;
 }
 
 .footer__container {
@@ -445,8 +444,8 @@ footer {
 }
 
 .footer__container li {
-	margin-bottom: 16px;
 	font-size: 15px;
+	margin-bottom: 16px;
 }
 
 .footer__socials {
@@ -481,9 +480,9 @@ footer {
 	}
 
 	.menu-list {
-		position: initial;
 		display: flex;
 		gap: 12px;
+		position: initial;
 	}
 
 	.header__hamburguer-menu {
@@ -519,10 +518,10 @@ footer {
 	}
 
 	.footer__logo {
-		display: unset;
-		height: 40px;
-		display: flex;
 		align-self: center;
+		display: unset;
+		display: flex;
+		height: 40px;
 		justify-self: center;
 	}
 
@@ -539,8 +538,8 @@ footer {
 	}
 
 	#form .container {
-    max-width: 100%;
-}
+		max-width: 100%;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -605,8 +604,8 @@ footer {
 	}
 
 	.slider__nav {
-		display: unset;
 		color: var(--dark-blue);
+		display: unset;
 	}
 }
 
